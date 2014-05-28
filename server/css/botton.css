@@ -1,0 +1,212 @@
+/*-----------------Common Style Botton-----------------*/
+.btn_common_blue {
+  color: #fff;
+  display: inline-block;
+  line-height: 1em;
+  padding: 10px 30px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #09f;
+  border: 1px solid #49f;
+  text-shadow: 0 1px 1px #07f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4499ff', endColorstr='#0077ff');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4499ff), color-stop(100%, #0077ff));
+  background: -webkit-linear-gradient(#4499ff, #0077ff);
+  background: -moz-linear-gradient(#4499ff, #0077ff);
+  background: -o-linear-gradient(#4499ff, #0077ff);
+  background: linear-gradient(#4499ff, #0077ff);
+}
+.btn_common_blue:link {
+  color: #fff;
+}
+.btn_common_blue:hover {
+  color: #fff;
+}
+.btn_common_blue:active {
+  position: relative;
+  top: 1px;
+}
+.btn_common_blue:visited {
+  color: #fff;
+}
+.btn_common_blue:hover {
+  background: #249;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #77b5ff), color-stop(100%, #3392ff));
+  background: -webkit-linear-gradient(#77b5ff, #3392ff);
+  background: -moz-linear-gradient(#77b5ff, #3392ff);
+  background: -o-linear-gradient(#77b5ff, #3392ff);
+  background: linear-gradient(#77b5ff, #3392ff);
+}
+
+.btn_common_red {
+  color: #fff;
+  display: inline-block;
+  line-height: 1em;
+  padding: 10px 30px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #f00;
+  border: 1px solid #a00;
+  text-shadow: 0 1px 1px #a00;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#aa0000');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #aa0000));
+  background: -webkit-linear-gradient(#ff0000, #aa0000);
+  background: -moz-linear-gradient(#ff0000, #aa0000);
+  background: -o-linear-gradient(#ff0000, #aa0000);
+  background: linear-gradient(#ff0000, #aa0000);
+}
+.btn_common_red:link {
+  color: #fff;
+}
+.btn_common_red:hover {
+  color: #fff;
+}
+.btn_common_red:active {
+  position: relative;
+  top: 1px;
+}
+.btn_common_red:visited {
+  color: #fff;
+}
+.btn_common_red:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff3333), color-stop(100%, #dd0000));
+  background: -webkit-linear-gradient(#ff3333, #dd0000);
+  background: -moz-linear-gradient(#ff3333, #dd0000);
+  background: -o-linear-gradient(#ff3333, #dd0000);
+  background: linear-gradient(#ff3333, #dd0000);
+}
+
+.btn_common_gray {
+  color: #fff;
+  display: inline-block;
+  line-height: 1em;
+  padding: 10px 30px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #ccc;
+  border: 1px solid #aaa;
+  text-shadow: 0 1px 1px #777;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aaaaaa', endColorstr='#666666');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #666666));
+  background: -webkit-linear-gradient(#aaaaaa, #666666);
+  background: -moz-linear-gradient(#aaaaaa, #666666);
+  background: -o-linear-gradient(#aaaaaa, #666666);
+  background: linear-gradient(#aaaaaa, #666666);
+}
+.btn_common_gray:link {
+  color: #fff;
+}
+.btn_common_gray:hover {
+  color: #fff;
+}
+.btn_common_gray:active {
+  position: relative;
+  top: 1px;
+}
+.btn_common_gray:visited {
+  color: #fff;
+}
+.btn_common_gray:hover {
+  background: #ccc;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c3c3), color-stop(100%, #808080));
+  background: -webkit-linear-gradient(#c3c3c3, #808080);
+  background: -moz-linear-gradient(#c3c3c3, #808080);
+  background: -o-linear-gradient(#c3c3c3, #808080);
+  background: linear-gradient(#c3c3c3, #808080);
+}
+
+.btn_common_small_gray {
+  background: #eee;
+  border: 1px solid #bbb;
+  color: #333;
+  display: inline-block;
+  line-height: 1em;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cccccc');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+  background: -webkit-linear-gradient(#ffffff, #cccccc);
+  background: -moz-linear-gradient(#ffffff, #cccccc);
+  background: -o-linear-gradient(#ffffff, #cccccc);
+  background: linear-gradient(#ffffff, #cccccc);
+}
+.btn_common_small_gray:link {
+  color: #333;
+}
+.btn_common_small_gray:hover {
+  color: #a00;
+}
+.btn_common_small_gray:active {
+  position: relative;
+  top: 1px;
+}
+.btn_common_small_gray:visited {
+  color: #333;
+}
+.btn_common_small_gray:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background: -o-linear-gradient(#ffffff, #e6e6e6);
+  background: linear-gradient(#ffffff, #e6e6e6);
+}
+
+.btn_common_small_green {
+  background: #eee;
+  border: 1px solid #bbb;
+  color: #333;
+  display: inline-block;
+  line-height: 1em;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ccdd55');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ccdd55));
+  background: -webkit-linear-gradient(#ffffff, #ccdd55);
+  background: -moz-linear-gradient(#ffffff, #ccdd55);
+  background: -o-linear-gradient(#ffffff, #ccdd55);
+  background: linear-gradient(#ffffff, #ccdd55);
+}
+.btn_common_small_green:link {
+  color: #333;
+}
+.btn_common_small_green:hover {
+  color: #a00;
+}
+.btn_common_small_green:active {
+  position: relative;
+  top: 1px;
+}
+.btn_common_small_green:visited {
+  color: #333;
+}
+.btn_common_small_green:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9e67f));
+  background: -webkit-linear-gradient(#ffffff, #d9e67f);
+  background: -moz-linear-gradient(#ffffff, #d9e67f);
+  background: -o-linear-gradient(#ffffff, #d9e67f);
+  background: linear-gradient(#ffffff, #d9e67f);
+}

@@ -1,0 +1,140 @@
+// =======================================================
+// AV 專案 主機 及 配置/重開機設定 資訊
+//
+// @ Fallen 
+//   skybe:fallen.li  
+//   mail:vu06.tw@yahoo.com.tw
+// =======================================================
+// -------------------------------------------------------
+// 全主機共通規格
+OS: Linux-CentOS 6.3~6.4
+Web Server: Nginx
+GATEWAY: PHP-Fpm
+DNS:
+
+// -------------------------------------------------------
+// 機房商 (實體機)
+蔡先生 (川鋒股份有限公司)
+機房位置：內湖瑞光路??? 台灣大哥大(台固)
+0933-161299
+0986-186075
+
+// DNS代理商
+
+
+// -------------------------------------------------------
+// 175.99.95.54 前台主機_1
+主機名稱: TP-AVGAGA-01
+帳號:filesAdmin
+密碼:ww@123456
+
+用途說明：
+	提供前台擋案上傳(針對影片所需的圖檔)/管理 用。
+
+各目錄說明：(home:/root/http/html)
+	config.xml:	前台config檔設定
+	www:		網頁目錄
+	www/AVGAGA	前台網頁專案
+
+// -------------------------------------------------------
+// 175.99.95.53 前台主機_2
+主機名稱: TP-AVGAGA-02
+帳號:filesAdmin
+密碼:ww@123456
+
+用途說明：
+	提供前台擋案上傳(針對影片所需的圖檔)/管理 用。
+
+各目錄說明：(home:/root/http/html)
+	config.xml:	前台config檔設定
+	www:		網頁目錄
+	www/AVGAGA	前台網頁專案
+
+
+// -------------------------------------------------------
+// 175.99.95.52 後台主機 暨 資料庫
+主機名稱: tp-1
+帳號:filesAdmin
+密碼:ww@123456
+
+用途說明：
+	提供圖檔上傳(針對影片所需的圖檔)/管理 用。
+
+各目錄說明：(home: /root/http/html/AVGAGA/pic)
+	commercial:	廣告欄位圖片
+	firm:		片商圖片
+	goods:		組合包圖片
+	member:		會員頭像
+	movie:		影片圖片
+	role:		女優圖片
+	series:		系列圖片
+
+主機資訊：
+	機櫃位置：4B???
+
+	主機規格： 	
+
+	外網:
+			IP:175.99.93.188
+			GATEWAY:175.99.93.177
+			Domain：
+
+重新開機啟動 重啟指令
+	iptables-restore < ipset.tt
+	service php-fpm start
+	nohup mongod --dbpath /root/databases/avgaga --port 9913 --master --autoresync &
+
+// -------------------------------------------------------
+// 175.99.94.240 轉檔主機
+帳號:filesAdmin
+密碼:ww@123456
+
+用途說明：
+	提供影片上傳/管理 用。
+
+各目錄說明：(home: /root/http/html)
+	moviedata	未轉檔前的影片放置位置 (主要影片傳至這邊)
+	movieout	轉檔完成的影片放置位置 (重要: 主要提供使用者觀看的影片位置)
+	preview		試看影片放置位置 
+	rockmongo	轉檔用資料庫套建 (不可動)
+
+主機資訊：
+	 機櫃位置：4BF02
+                
+         主機規格： 	
+			IBM - 
+         		BIOS：IBM SYSTEM X 
+         		雙核/雙網卡
+
+	 外網：
+			IP: 175.99.94.240
+			GATEWAY：175.99.94.254
+			Domain：
+			內網ip : 192.168.94.240
+
+
+         內網：
+			RDID(磁碟陣列) - 120T (可用112~113T左右)
+         		帳號/密碼：dmmadmin
+			位置：/var/share/ezfs/shareroot/dmm
+                	IP (連結NFS主機)：192.168.94.171
+	
+重新開機啟動 重啟指令
+	iptables-restore < ipset
+	service php-fpm start
+	nohup mongod --dbpath /root/databases/avgaga --port 9913 --master --autoresync &
+	mount -t nfs 192.168.94.171:/var/share/ezfs/shareroot/dmm   	     /root/http/files
+	mount -t nfs 192.168.94.171:/var/share/ezfs/shareroot/dmm/movieout   /root/http/html/movieout
+	mount -t nfs 192.168.94.171:/var/share/ezfs/shareroot/dmm/preview    /root/http/html/preview
+	mount -t nfs 192.168.94.171:/var/share/ezfs/shareroot/dmm/moviedata  /root/http/html/moviedata
+
+// -------------------------------------------------------
+// 175.99.95.50 前台備用
+主機名稱: TP-AVGAGA-05
+帳號:filesAdmin
+密碼:ww@123456
+
+// -------------------------------------------------------
+// 175.99.95.51 db備用機
+主機名稱: TP-AVGAGA-04
+

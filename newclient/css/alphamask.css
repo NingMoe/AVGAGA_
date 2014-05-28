@@ -1,0 +1,27 @@
+   #block{
+    position: absolute;
+    top:0;
+        left:0;
+        height:100%;
+        width:100%;
+    background-color:gray;
+    z-index:998;
+        visibility: hidden;
+   }
+   #fm{
+    position: absolute;
+    top:30%;
+    left:40%;
+        width:20%;
+        height:20%;
+        background-color:white;
+    z-index:999;
+        visibility: hidden;
+   }
+   #bu1{
+      margin-top:20%;
+      margin-left:40%;
+   }
+   body{
+      margin:0px;
+   }

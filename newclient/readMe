@@ -1,0 +1,59 @@
+//---------------------------------------------------------------------
+//              TRONPY GAMES PROPRIETARY INFORMATION
+//
+// This software is supplied under the terms of a license agreement or
+// nondisclosure agreement with TRONPY GAMES and may not 
+// be copied or disclosed except in accordance with the terms of that
+// agreement.
+//
+// @ fallen
+// @ skybe: fallen.li
+//             Copyright © 2014 by TRONPY GAMES.
+//                      All Rights Reserved.
+//---------------------------------------------------------------------
+
+avgaga 前台 專案
+
+=======================================================================
+
+執行環境：
+	Lnmp (m:mongo)
+	php-fpm
+	php-mongo
+	
+程式架構說明：
+	readMe: 程式架構說明與指引
+	index.php : enter point
+	config.xml : 主定義檔 (路徑定義 / 信箱定義 / 主要索引頁面定義(給玩家可點擊選擇的))
+
+	modle : 資料管理 模型
+		-　CDB　：　資料庫管理
+		-　CImg : 圖檔資料管理
+		
+	controllers : 流程管理 / 邏輯運算 / 些許介面
+		- head : 標頭/引用 檔  (此處有標註 各個物件的主要負責功能)
+		- CMain : 流程管理器
+		-　packages :　工具套件
+		-　page　： 頁面  物件
+		- plugs : 邏輯運算 物件
+		
+	views : 介面 (引用功能說明 位於 controllers/head 內 )
+		
+	css :　css
+	images　： 圖檔
+	javascripts : js 放置
+		- common : 主要js放置處
+		- banner : 首頁頂部的banner變換js
+		- portbox : 小視窗特效js
+		
+	jwplayer : 影片播放引勤
+	plugs: 外部套件 (目前此處僅放置 phpmailer 套件)
+		- CSendMail : 主要信件管理器 (帳密位於config內喔~)
+		
+	skins :　jwplayer　skin
+ 
+
+
+
+
+

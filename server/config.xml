@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>	
+	<!-- 後台帳密 -->
+	<account> 
+		 
+		<entry account="1" passwd="" power="CAdmin/CMvInfor/CMvFiles/CGoods/CActress/CFirm/CSeries/CType/CLeftMenu/CSort/CBanner/CSetGoods/CMember/CMvStatistics/CMemberStatistics/CDisk"/>		
+		<entry account="123" passwd="123" power="CMvInfor/CMvFiles/CGoods/CActress/CFirm/CSeries/CType/CLeftMenu/CSort/CBanner/CSetGoods/CMember/CMvStatistics/CMemberStatistics/CDisk"/>
+		<entry account="filesAdmin" passwd="ww@123456" power="CAdmin/CMvInfor/CMvFiles/CGoods/CActress/CFirm/CSeries/CType/CLeftMenu/CSort/CBanner/CSetGoods/CMember/CMvStatistics/CMemberStatistics/CDisk"/></account>
+	
+	<!-- 後台 顯示文字對應 -->
+	<content> 
+		<!-- 管理員設定 -->
+		 <entry name="CAdmin" showStr="管理員清單"/>
+		 <!-- 影片管理 -->
+		 <entry name="CMvInfor" showStr="影片資料管理"/>
+		 <entry name="CMvFiles" showStr="影片檔案管理"/>
+		 <entry name="CGoods" showStr="組合包管理"/>
+		 <!-- 網站管理 -->
+		 <entry name="CActress" showStr="女優管理"/>
+		 <entry name="CFirm" showStr="片商管理"/>
+		 <entry name="CSeries" showStr="系列管理"/>
+		 <entry name="CType" showStr="類型管理"/>
+		 <entry name="CLeftMenu" showStr="左側選單設定"/>
+		 <entry name="CSort" showStr="排行設定"/>
+		 <entry name="CBanner" showStr="廣告欄位設定"/>
+		 <!-- 商品管理 -->
+		 <entry name="CSetGoods" showStr="商品點數設定"/>
+		 <!-- 會員管理 -->
+		 <entry name="CMember" showStr="會員清單"/>
+		 <!-- 統計資料 -->
+		 <entry name="CMvStatistics" showStr="影片數據統計"/>
+		 <entry name="CMemberStatistics" showStr="會員數據統計"/>
+		 <entry name="CDisk" showStr="主機資訊"/>
+	</content>
+	
+	<!-- DB設定 -->
+	<db>
+		<entry id="db" path="mongodb://175.99.94.250:9913" name="AVGAGA"/> 
+	</db>
+		
+	<!-- 影片檔案位址 -->
+	<!-- runScript="http://175.99.94.240:1225/sprite/runTurn.php"  "http://175.99.94.240:1225/sprite/turnmovie.php" -->
+	<movie> 
+		<entry db="mongodb://175.99.94.242:9913"
+					name="AVGAGA" 
+					tableName="AVGAGA_Turn" 	
+					keyTableName='AVGAGA_Control' 
+					playmvUrl="http://175.99.94.242:1225/movieout/" 
+					previewUrl="http://175.99.94.242:1225/preview/"  
+		/> 
+	</movie>
+	
+	<!-- 圖片檔位置 -->
+	<img>
+		<entry url="../pic/"/> 
+		<!-- <entry url="" />   <entry url="http://175.99.95.52/AVGAGA/pic/"/>  --> 
+	</img>
+	
+	<!-- 主機資訊 -->
+	<host>
+		<enpty host_DB="http://175.99.94.250/AVGAGA/avscript/getHostInfor.php" 
+		            host_Movie="http://175.99.94.242:1225/sprite/getHostInfor.php"
+		/>
+	</host>
+	
+	
+</main>

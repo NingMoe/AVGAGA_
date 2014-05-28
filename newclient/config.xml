@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+	<!--  資料庫位置-->
+	<db> 
+		<enpty url="mongodb://avgaga.websystem.tronpy.com:9913" 
+					dbname="AVGAGA"
+		/>
+	</db>
+	<!-- 各資料放置位置 http://avgaga.tronpy.com/www/AVGAGA/client/index.php  http://localhost/AVGAGA/newclient/index.php-->
+	<data> 
+		<enpty url="http://localhost/AVGAGA/newclient/index.php"
+					pic="http://avgaga.websystem.tronpy.com:17543" 
+					mv="http://avgaga.data.tronpy.com:1225/movieout/"
+					previewmv="http://avgaga.data.tronpy.com:1225/preview/"
+					script="http://avgaga.websystem.tronpy.com/AVGAGA/avscript/"
+		/>
+	</data>
+	<!-- google mail 官方信箱資料 -->
+	<mail>
+		<enpty	email="avgaga.service@gmail.com"
+					password="testTP@#$"
+		/>
+	</mail>
+	
+	<language>
+		<set language='tw' />
+		<enpty name='CHome' tw='首頁' />
+		<enpty name='CTotal' tw='影片總覽' />
+		<enpty name='CRanking' tw='排行榜' />
+		<enpty name='CActress' tw='女優一覽' />
+		<enpty name='CType' tw='類型一覽' />
+		<enpty name='CSeries' tw='系列一覽' />
+		<enpty name='CFirm' tw='片商一覽' />
+	</language>
+
+</main>
+
+

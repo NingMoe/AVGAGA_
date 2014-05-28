@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>	
+		
+	<!-- 資料路徑設定 mongodb://175.99.94.250:9913 mongodb://avgaga.websystem.tronpy.com:9913 -->
+	<set>
+		<db url="mongodb://avgaga.websystem.tronpy.com:9913"
+			dbname="AVGAGA"
+		/>
+	</set>
+	
+	<!-- 錯誤代碼 -->
+	<errorcode>
+		<error_10000 code="10000" msg='參數不合法，請重新輸入。[錯誤代碼:10000]' remark='玩家參數為空值' />
+		<error_10001 code="10001" msg='參數不合法，請重新輸入。[錯誤代碼:10001]' remark='交易型態為空值' />
+		<error_10002 code="10002" msg='參數不合法，請重新輸入。[錯誤代碼:10002]' remark='商品參數為空值' />
+		<error_10003 code="10003" msg='金額不足。[錯誤代碼:10003]' remark='玩家金額不足' />
+		<error_10004 code="10004" msg='交易狀態錯誤。[錯誤代碼:10004]' remark='該玩家交易狀態鎖住中(可能有在交易中)' />
+		<error_10005 code="10005" msg='交易錯誤，商品重複購買(重複購買已取消)。[錯誤代碼:10005]' remark='該商品已購買過' />
+	</errorcode>
+	
+</main>
